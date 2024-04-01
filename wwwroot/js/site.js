@@ -1,11 +1,10 @@
-﻿// obtengo los valores introducidos en los inputs
-// los asigno a dos variables 
-
-var texto1 = document.getElementById("input-texto-1").value;
-var texto2 = document.getElementById("input-texto-2").value;
-
-// creo una función que concatene ambas cadenas
+﻿// creo una función que concatene ambas cadenas
 function concatenar() {
+    // obtengo los valores introducidos en los inputs
+    // los asigno a dos variables 
+
+    var texto1 = document.getElementById("input-texto-1").value;
+    var texto2 = document.getElementById("input-texto-2").value;
 
     // creo la concatenación 
     var concatenacion = texto1.concat(texto2);
