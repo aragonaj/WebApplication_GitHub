@@ -4,8 +4,6 @@
 var texto1 = document.getElementById("input-texto-1").value;
 var texto2 = document.getElementById("input-texto-2").value;
 
-var label = document.getElementById("label-solucion");
-
 // creo una función que concatene ambas cadenas
 function concatenar() {
 
@@ -13,6 +11,7 @@ function concatenar() {
     var concatenacion = texto1.concat(texto2);
 
     // imprimo la concatenación en el label
+    var label = document.getElementById("label-solucion");
     label.innerHTML = "El resultado concatenado de ambos textos es: " +concatenacion;
 
     // prueba en consola
@@ -21,9 +20,7 @@ function concatenar() {
 
 // hago que una vez introducidos ambos textos
 // al pulsar el botón cree el resultado concatenado
-
-var boton = document.getElementById("boton-unir");
-
 // le añado un listener para que realice la función concatenar
+var boton = document.getElementById("boton-unir");
 boton.addEventListener("click", concatenar);
 
